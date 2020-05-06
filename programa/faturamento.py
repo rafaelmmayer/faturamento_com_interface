@@ -9,7 +9,6 @@
 import pandas as pd
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog
-from PyQt5.QtGui import QCursor 
 from datetime import date
 
 compra = 0
@@ -24,11 +23,12 @@ class Ui_MainWindow(QDialog):
     
     def finish_day(self):
         data_atual = date.today()
-        cada_dia = pd.read_excel('excel/Faturamento.xlsx', sheet_name="Faturamento de cada dia)
+        cada_dia = pd.read_excel('excel/Faturamento.xlsx', sheet_name="Faturamento de cada dia")
         faturamento = df["Valor"].sum()
         cada_dia.at[data_atual.day, "DIA"] = data_atual.strftime("%d/%m/%Y")
         cada_dia.at[data_atual.day, "FATURAMENTO"] = faturamento
         cada_dia.to_excel('excel/Faturamento.xlsx', sheet_name='Faturamento de cada dia', index = False)
+        sys.exit(app.exec_())
 
     def finish(self):
         global compra
