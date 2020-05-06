@@ -5,6 +5,7 @@
 ### Funcionamento
 
 O script alimenta uma tabela no excel a cada compra (finalizar compra) e ao final do dia (finalizar o dia) alimento outro arquivo .xlsx com o faturamento do dia.
+Tudo controlado pela biblioteca [Pandas](https://pandas.pydata.org/) do python.
 
 ## Interface
 ![Imagem 1 da interface](https://github.com/rafaelmmayer/faturamento_com_interface/blob/master/img/main_window.png)
