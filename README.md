@@ -1,6 +1,6 @@
 # Cadastro de pedido
 
-## Script prático que eu criei para ajudar no comércio da minha famímia.
+## Script prático que eu criei para ajudar no comércio local.
 
 ### Funcionamento
 
